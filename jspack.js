@@ -4,7 +4,7 @@
  */
 
 // Utility object:  Encode/Decode C-style binary primitives to/from octet arrays
-var Struct = new function ()
+function JSPack()
 {
 	// Module-level (private) variables
 	var el,  bBE = false, m = this;
@@ -247,4 +247,6 @@ var Struct = new function ()
 		}
 		return sum;
 	};
-}();
+};
+
+exports.jspack = new JSPack();
