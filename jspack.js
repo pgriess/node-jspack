@@ -13,8 +13,8 @@ function JSPack()
 	// Raw byte arrays
 	m._DeArray = function (a, p, l)
 	{       
-		var slice = a.subarray || a.slice;
-		return [slice(p,p+l)];
+		var slice = a.subarray ? 'subarray' : 'slice';
+		return [a[slice](p,p+l)];
 	};
 	m._EnArray = function (a, p, l, v)
 	{
