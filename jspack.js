@@ -1,5 +1,5 @@
 /*!
- *  Copyright © 2008 Fair Oaks Labs, Inc.
+ *  Copyright ï¿½ 2008 Fair Oaks Labs, Inc.
  *  All rights reserved.
  */
 
@@ -12,8 +12,9 @@ function JSPack()
 
 	// Raw byte arrays
 	m._DeArray = function (a, p, l)
-	{
-		return [a.slice(p,p+l)];
+	{       
+		var slice = a.subarray ? 'subarray' : 'slice';
+		return [a[slice](p,p+l)];
 	};
 	m._EnArray = function (a, p, l, v)
 	{
