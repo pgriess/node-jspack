@@ -1,0 +1,17 @@
+{
+  "author": "https://github.com/pgriess",
+  "name": "jspack",
+  "description": "JavaScript library to pack primitives to octet arrays, packaged for NodeJS.",
+  "version": "0.0.1",
+  "homepage": "http://github.com/birchroad/node-jspack",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/birchroad/node-jspack.git"
+  },
+  "main": "./jspack.js",
+  "maintainers": [{
+    "name":"Peter Magnusson"
+  , "email":"peter@birchroad.net"
+  , "web":"http://github.com/birchroad/node-jspack"
+  }]
+}
